@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<body>
+<h2>Products</h2>
+    <p th:each="product : ${products}">
+        <span th:text="${product}"></span>
+    </p>
+    <form action="/addProduct" method="get">
+        <input type="submit" value="Add product" />
+    </form></body>
+</html>
